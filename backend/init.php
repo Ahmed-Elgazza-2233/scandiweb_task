@@ -45,9 +45,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     else if (isset($_POST['toDelete'])) {
         $controller->deleteProducts();
     }
-    // else if (isset($_POST['getProducts'])) {
-    //     $controller->getProducts();
-    // }
 } elseif ($_SERVER["REQUEST_METHOD"] == "GET") {
     $controller->getProducts();
 }
